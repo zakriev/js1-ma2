@@ -1,15 +1,15 @@
-// question 1
+// Q1
 const myFunctionExpression = function () {
     console.log("HusseinZakrijev");
 };
 
-// question 2
+// Q2
 const clickMeButton = document.querySelector(".btn");
 clickMeButton.addEventListener("click", function () {
     console.log("I was clicked");
 });
 
-// question 3
+// Q3
 const Input = document.querySelector("#firstName");
 Input.addEventListener("keydown", logKey);
 
@@ -17,7 +17,7 @@ function logKey(event) {
     console.dir(event.key);
 }
 
-// question 4
+// Q4
 const hoverOver = document.querySelector("button");
 hoverOver.addEventListener("mouseover", addClasslist);
 
@@ -25,7 +25,7 @@ function addClassList() {
     hoverOver.classList.add("hover");
 }
 
-// question 5
+// Q5
 const hoverOut = document.querySelector("[data-animal='dog']");
 hoverOut.addEventListener("mouseout", removeClassList);
 
@@ -33,7 +33,7 @@ function removeClassList() {
     hoverOut.classList.remove("hover");
 }
 
-// question 6
+// Q6
 const animal = document.querySelectorAll("li");
 
 for (let i = 0; i < animal.length; i++) {
@@ -44,7 +44,7 @@ for (let i = 0; i < animal.length; i++) {
     }
 }
 
-// question 7
+// Q7
 switch (animal) {
     case "cat":
         console.log("Meow");
@@ -55,20 +55,20 @@ switch (animal) {
         break;
 
     case "bird":
-        console.log("Tweet");
+        console.log("Tweett");
         break;
 
     default:
         console.log("Harrumph");
 }
 
-// question 8
+// Q8
 const sheep = ["Malcolm", "Anders", "Marie"];
 sheep.forEach(function (sheepName) {
     console.log(sheepName);
 });
 
-// question 9
+// Q9
 function helloTimer() {
     console.log("Hello");
     if (counter === 5) {
@@ -79,11 +79,11 @@ function helloTimer() {
 let counter = 0;
 const intervalId = setInterval(helloTimer, 500);
 
-// question 10
+// Q10
 const container = document.querySelector(".container");
 
 function textDelay() {
     container.innerText = "Text updated";
 }
 
-setTimeout(textDelay, 2000);
+setTime(textDelay, 2000);
